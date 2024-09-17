@@ -1,0 +1,11 @@
+.header {
+    padding: 20px 0;
+}
+
+.header > a {
+    color: #e50914;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
