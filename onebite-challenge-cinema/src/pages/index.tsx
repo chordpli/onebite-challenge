@@ -19,7 +19,7 @@ export default function Home() {
                 <div>등록된 모든 영화</div>
                 <div className={style.all_container}>
                     {movies.map((movie) => (
-                        <MovieItem key={`recomovie-${movie.id}`} {...movie} />
+                        <MovieItem key={`movie-${movie.id}`} {...movie} />
                     ))}
                 </div>
             </div>
