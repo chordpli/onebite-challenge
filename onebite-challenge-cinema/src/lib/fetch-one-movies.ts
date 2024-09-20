@@ -1,0 +1,13 @@
+import {MovieData} from "@/types";
+
+export default async function fetchOneMovies(id?: number): Promise<MovieData | null> {
+    let url = `http://localhost:12345/movie/${id}`;
+
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch (err) {
+        console.error(err);
+        return null;
+    }
+}
