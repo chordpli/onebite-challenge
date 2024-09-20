@@ -1,5 +1,5 @@
 import style from './Search-bar.module.css';
-import {ReactNode, useState} from "react";
+import {useState} from "react";
 import {useRouter} from "next/router";
 
 export default function SearchBar() {
