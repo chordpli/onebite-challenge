@@ -56,4 +56,4 @@ export default function Home({ recoMovies }: InferGetStaticPropsType<typeof getS
             </div>
         </div>
     );
-}
+};
