@@ -2,7 +2,7 @@ import SearchBar from "@/components/Search-bar";
 import MovieItem from "@/components/Movie-item";
 import style from './index.module.css';
 import fetchMovies from "@/lib/fetch-movies";
-import fetchRandomMovies from "@/lib/fetch-random-books";
+import fetchRandomMovies from "@/lib/fetch-random-movies";
 import {InferGetServerSidePropsType} from "next";
 
 export const getServerSideProps = async () => {
