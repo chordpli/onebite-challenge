@@ -1,4 +1,3 @@
-import {useRouter} from "next/router";
 import SearchBar from "@/components/Search-bar";
 import MovieItem from "@/components/Movie-item";
 import style from './index.module.css';
@@ -19,8 +18,6 @@ export const getServerSideProps = async (context: GetServerSidePropsContext) => 
 }
 
 export default function Page({searchMovies}: InferGetServerSidePropsType<typeof getServerSideProps>) {
-
-    const router = useRouter();
 
     return (
         <div>
