@@ -3,6 +3,7 @@ import MovieItem from "@/components/Movie-item";
 import style from './index.module.css';
 import {GetServerSidePropsContext, InferGetServerSidePropsType} from "next";
 import fetchMovies from "@/lib/fetch-movies";
+import {Head} from "next/document";
 
 
 export const getServerSideProps = async (context: GetServerSidePropsContext) => {
@@ -21,6 +22,15 @@ export default function Page({searchMovies}: InferGetServerSidePropsType<typeof 
 
     return (
         <div>
+            <Head>
+                <title>한입 씨네마- 검색 결과</title>
+                <meta property="og:image" content="/thumbnail.png"/>
+                <meta property="og:title" content="한입 씨네마"/>
+                <meta
+                    property="og:description"
+                    content="한입 씨네마 영화"
+                />
+            </Head>
             <SearchBar/>
             {searchMovies && (
                 <div className={style.search_container}>
